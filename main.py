@@ -1144,8 +1144,8 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                 timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y • %I:%M %p")
-                cc = f'📘 <b>VIDEO DETAILS<b> 📘\n━━━━━━━━━━━━━━━━━━━━━━━\n📌 Document ID: #{str(count).zfill(3)}\n\n📝 <b>Title:<b> {name1}\n━━━━━━━━━━━━━━━━━━━━━━━\n📦 Batch Name:</b>\n<blockquote>{b_name}</blockquote>\n━━━━━━━━━━━━━━━━━━━━━━━\n🛠️ <b>Uploader:</b> {CR}\n━━━━━━━━━━━━━━━━━━━━━━━\n🕒 {timestamp}'
+                timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y • %I:%M %p")
+                cc = f'📘 <b>VIDEO DETAILS</b> 📘\n━━━━━━━━━━━━━━━━━━━━━━━\n📌 Document ID: #{str(count).zfill(3)}\n\n📝 <b>Title:<b> {name1}\n━━━━━━━━━━━━━━━━━━━━━━━\n📦 Batch Name:</b>\n<blockquote>{b_name}</blockquote>\n━━━━━━━━━━━━━━━━━━━━━━━\n🛠️ <b>Uploader:</b> {CR}\n━━━━━━━━━━━━━━━━━━━━━━━\n🕒 {timestamp}'
                 cc1 = f'📘 <b>PDF DETAILS</b> 📘\n━━━━━━━━━━━━━━━━━━━━━━━\n📌 <b>PDF ID:</b> #{str(count).zfill(3)}\n\n📝 <b>Title:</b> {name1}.pdf\n━━━━━━━━━━━━━━━━━━━━━━━\n📦 <b>Batch Name:</b>\n<blockquote>{b_name}</blockquote>\n━━━━━━━━━━━━━━━━━━━━━━━\n🛠️ <b>Uploader:</b> {CR}\n━━━━━━━━━━━━━━━━━━━━━━━\n🕒 {timestamp}'
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
                 ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
