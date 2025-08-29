@@ -45,8 +45,8 @@ proxy = {
     "scheme": "http",
     "hostname": "23.95.150.145",
     "port": 6114,
-    "username": opyrphfx,
-    "password": fy5tjlx5wfri
+    "username": None,
+    "password": None
 }
 bot = Client(
     "bot",
