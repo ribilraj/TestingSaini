@@ -43,7 +43,7 @@ import ffmpeg
 
 proxy = {
     "scheme": "socks5",
-    "hostname": "8.211.195.1",
+    "hostname": "8.211.195.139",
     "port": 8483,
     "username": None,
     "password": None
