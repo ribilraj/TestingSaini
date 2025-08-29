@@ -42,11 +42,11 @@ import shutil
 import ffmpeg
 
 proxy = {
-    "scheme": "socks5",
-    "hostname": "8.211.195.139",
-    "port": 8483,
-    "username": None,
-    "password": None
+    "scheme": "http",
+    "hostname": "23.95.150.145",
+    "port": 6114,
+    "username": opyrphfx,
+    "password": fy5tjlx5wfri
 }
 bot = Client(
     "bot",
