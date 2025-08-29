@@ -41,12 +41,19 @@ import zipfile
 import shutil
 import ffmpeg
 
-# Initialize the bot
+proxy = {
+    "scheme": "socks5",
+    "hostname": "8.211.195.1",
+    "port": 8483,
+    "username": None,
+    "password": None
+}
 bot = Client(
     "bot",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
+    proxy=proxy
 )
 
 processing_request = False
